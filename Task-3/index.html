@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clickme()">click me</button>
+    <script>
+        var iteminstock = true;
+        var subseribed = false;
+
+        function clickme() {
+            if (iteminstock  && subseribed ) {
+                console.log("you can purchase this item");
+
+            }
+
+            else if (iteminstock || subseribed ) {
+                console.log("the item is out os stock");
+
+            }
+
+            else if (iteminstock || subseribed ) {
+                console.log("you need to subseribed");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

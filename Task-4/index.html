@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="click()">onclick</button> -->
+
+    <script>
+        var isadmin = false;
+        var iseditor = false;
+        var ismoderator = false;
+
+        function click() {
+
+            if (isadmin && iseditor && ismoderator) {
+                console.log("access granted");
+
+            }
+
+            else if (!isadmin || !iseditor || !ismoderator) {
+                console.log("access denied");
+
+            }
+        }
+        click();
+
+    </script>
+</body>
+
+</html>
